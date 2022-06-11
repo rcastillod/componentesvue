@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
     .card {
-        background-color: hsl(var(--clr-card-bg)/.1);
+        background-color: hsl(var(--clr-card-bg)/.5);
         backdrop-filter: blur(10px);
         box-shadow: 
             inset -1px 0px 0px hsl(var(--clr-white)/.1),
@@ -54,7 +54,7 @@ export default {
     }
     .card__image {
         border-radius: 50%;
-        border: 3px solid hsl(var(--clr-card-bg));
+        border: 5px solid hsl(var(--clr-card-bg)/.7);
         margin-top: -6.25rem;
         margin-left: -.9375rem;
         height: 6.25rem;
@@ -65,9 +65,10 @@ export default {
         margin-top: 1.25rem;
     }
     .card__title {
-        font-size: 1.5rem;
+        font-family: var(--ff-heading);
+        font-size: 1.25rem;
         font-weight: bold;
-        margin-bottom: .3125rem;
+        margin-bottom: .625rem;
     }
     .card__meta {
         display: flex;

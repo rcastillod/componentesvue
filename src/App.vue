@@ -39,17 +39,27 @@ export default {
 
 <style>
 :root {
-  --clr-card-bg: 60 69% 62%;
+  /* Colors */
+  --clr-card-bg: 280deg 93% 12%;
   --clr-white: 0 0% 100%;
+  /* Fonts */
+  --ff-heading: 'Zen Dots', cursive;
 }
 body {
-  background-image: url('assets/rm-bg.png');
+  background-image: url('assets/space-bg.jpg');
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   display: grid;
-  height: 100vh;
+  height: 100%;
+  padding-block: 6.25rem;
   place-items: center;
+}
+@media ( min-width: 508px ) {
+  body {
+    height: 100vh;
+    padding: 0;
+  }
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
